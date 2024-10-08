@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';  // Import useState and useEffect
+import React, { useState, useEffect } from 'react';  
 
 const QuoteMachine = () => {
   const [quote, setQuote] = useState('');
@@ -15,10 +15,9 @@ const QuoteMachine = () => {
     setAuthor(randomQuote.author || 'Unknown');
   };
 
-  // Fetch a new quote when the component mounts (on first load)
   useEffect(() => {
     fetchData();
-  }, []);  // Empty dependency array ensures this runs only once
+  }, []);  
 
   return (
     <div id="quote-box" className="d-flex justify-content-center align-items-center vh-100">
