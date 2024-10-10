@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from  'axios';
-import './QuoteMachine.css';
+import './assets/scss/QuoteMachine.scss';
 
 function QuoteMachine(){
   //Usestate
@@ -22,7 +22,7 @@ function QuoteMachine(){
     <div id="quote-box" className="quote-box">
           <p id="text">{quote}</p>
           <p id="author">{author}</p>
-          <button id="new-quote" onClick={fetchQuote}>New Quote</button>
+          <button id="new-quote" onClick={fetchData}>New Quote</button>
           <a 
               id="tweet-quote" 
               href={`https://twitter.com/intent/tweet?text="${quote}" - ${author}`} 
