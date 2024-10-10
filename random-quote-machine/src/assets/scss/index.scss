@@ -1,0 +1,17 @@
+@import './variable';
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: $bg-color;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
